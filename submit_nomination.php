@@ -27,7 +27,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $nominator_country = sanitizeInput($_POST["nominator_country"]);
 
     // Create a new Spreadsheet object
-    // $spreadsheet = getActiveSpreadsheet().getSheetByName('awardsheet.xlsx');
+    // $spreadsheet = getActiveSpreadsheet().getSheetByName('https://docs.google.com/spreadsheets/d/18zU3HYqH6pu16hC56w69Fm9fe4LvDSX5UvysRFRO5hk/edit?usp=sharing');
     //  $spreadsheet = new Spreadsheet();
     $spreadsheet = IOFactory::load('write-folder/awardsheet.xlsx');
     $sheet = $spreadsheet->getActiveSheet(); 
