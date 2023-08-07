@@ -69,7 +69,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     // $writer->save($filename);
     // Save the modified spreadsheet
     $writer = IOFactory::createWriter($spreadsheet, 'Xlsx');
-    $writer->save('awardsheet.xlsx');
+    $writer->save('https://docs.google.com/spreadsheets/d/18zU3HYqH6pu16hC56w69Fm9fe4LvDSX5UvysRFRO5hk/edit?usp=sharing');
 
     // Output the file to the user for download
     //header('Content-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet');
