@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <style type="text/css"> p.space {line-height:150%;} </style>
+    <title>Award Nomination Form</title>
+  </head>
+  
+  
+<body text = #03046B>
+ 
+<body>
+  
+<h1>Nominate a CONSTRAINTS  Paper for an Award</h2>
+<hr>
+<p class="1.5">
+<form action="submit_nomination.php" method="POST">
+    <label for="paper_title">Paper Title:</label>
+    <input type="text" id="paper_title" name="paper_title" required>
+    <br><br>
+    <label for="authors">Authors:</label>
+    <input type="text" id="authors" name="authors" required>
+    <br><br>
+    <label for="award_category">Select Award Category:</label>
+    <select id="award_category" name="award_category" required>
+        <option value="classic">Classic Paper Award</option>
+        <option value="prominent">Prominent Paper Award</option>
+    </select>
+    <br><br>
+        <label for="year">Year:</label>
+    <input type="number" id="year" name="year" required min="1970" max="2023">
+    <br><br>
+    <label for="doi_or_pdf">DOI or PDF link:</label>
+    <input type="text" id="doi_or_pdf" name="doi_or_pdf" required>
+    <br><br>
+    <label for="update_authors">Update on author institutions if known to be different from the original publication:</label>
+    <textarea id="update_authors" name="update_authors" rows="4"></textarea>
+    <br><br>
+    <label for="impact_significance">Impact and Significance (500 words or fewer):</label>
+    <textarea id="impact_significance" name="impact_significance" rows="6" required></textarea>
+    <br><br>
+    <label for="proposed_citation">Proposed Citation (20 words or fewer):</label>
+    <input type="text" id="proposed_citation" name="proposed_citation" required>
+    <br><br>
+    <label for="nominator_name">Nominator Name:</label>
+    <input type="text" id="nominator_name" name="nominator_name" required>
+    <br><br>
+    <label for="relationship_to_authors">Relationship (if any) to authors:</label>
+    <input type="text" id="relationship_to_authors" name="relationship_to_authors">
+    <br><br>
+    <label for="nominator_address">Address:</label>
+    <input type="text" id="nominator_address" name="nominator_address" required>
+    <br><br>
+    <label for="nominator_country">Country:</label>
+    <input type="text" id="nominator_country" name="nominator_country" required>
+    <br><br>
+    <input type="submit" value="Submit Nomination">
+</form>
+</p>
+</body>
+</html>
