@@ -29,7 +29,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     // Create a new Spreadsheet object
     // $spreadsheet = getActiveSpreadsheet().getSheetByName('awardsheet.xlsx');
     //  $spreadsheet = new Spreadsheet();
-    $spreadsheet = IOFactory::load('write-folder/awardsheet.xlsx');
+    $spreadsheet = IOFactory::load('awardsheet.xlsx');
     $sheet = $spreadsheet->getActiveSheet(); 
 
     // Set the headers for the spreadsheet
