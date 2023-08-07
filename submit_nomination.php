@@ -1,5 +1,7 @@
 <?php
-require 'C:\php-8.2.8-Win32-vs16-x64\vendor\autoload.php'; // Include the PhpSpreadsheet autoloader
+// include the autoloader class near the top of your page
+include 'classes/Autoloader.php';
+// require 'C:\php-8.2.8-Win32-vs16-x64\vendor\autoload.php'; // Include the PhpSpreadsheet autoloader
 
 use PhpOffice\PhpSpreadsheet\Spreadsheet;
 use PhpOffice\PhpSpreadsheet\Writer\Xlsx;
