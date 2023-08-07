@@ -27,10 +27,10 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $nominator_country = sanitizeInput($_POST["nominator_country"]);
 
     // Create a new Spreadsheet object
-    // $spreadsheet = getActiveSpreadsheet().getSheetByName('https://docs.google.com/spreadsheets/d/18zU3HYqH6pu16hC56w69Fm9fe4LvDSX5UvysRFRO5hk/edit?usp=sharing');
-    //  $spreadsheet = new Spreadsheet();
-    $spreadsheet = IOFactory::load('https://docs.google.com/spreadsheets/d/18zU3HYqH6pu16hC56w69Fm9fe4LvDSX5UvysRFRO5hk/edit?usp=sharing');
-    $sheet = $spreadsheet->getActiveSheet(); 
+    $spreadsheet = getActiveSpreadsheet().getSheetByName('https://docs.google.com/spreadsheets/d/18zU3HYqH6pu16hC56w69Fm9fe4LvDSX5UvysRFRO5hk/edit?usp=sharing');
+    $spreadsheet = new Spreadsheet();
+//    $spreadsheet = IOFactory::load('https://docs.google.com/spreadsheets/d/18zU3HYqH6pu16hC56w69Fm9fe4LvDSX5UvysRFRO5hk/edit?usp=sharing');
+//    $sheet = $spreadsheet->getActiveSheet(); 
 
     // Set the headers for the spreadsheet
     //$sheet->setCellValue('A1', 'Paper Title');
